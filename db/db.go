@@ -1,13 +1,12 @@
 package db
 
 import (
-	"esay-search/config"
+	"easy-search/config"
 	"fmt"
 	"log"
 	"os"
 	"time"
 
-	"easy-search/pkgs/path"
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
