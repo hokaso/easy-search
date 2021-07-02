@@ -1,0 +1,5 @@
+database:
+username:
+password:
+host:
+port: 3306

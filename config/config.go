@@ -1,7 +1,7 @@
 package config
 
 import (
-	"esay-search/pkgs/path"
+	"easy-search/pkgs/path"
 	"fmt"
 	"github.com/jinzhu/configor"
 )
