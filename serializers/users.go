@@ -9,18 +9,18 @@ type User struct {
 }
 
 type UserPhoneRequest struct {
-	Phone string `json:"phone" binding:"required"`
+	Phone string `form:"phone" binding:"required"`
 }
 
 type UserQqRequest struct {
-	Qq string `json:"qq" binding:"required"`
+	Qq string `form:"qq" binding:"required"`
 }
 
 type UserResponse struct {
 	User User `json:"user"`
 }
 
-func SerializeUser(user models.User) User {
+func SerializeUser(user models.SenQq) User {
 	return User{
 		ID:    user.ID,
 		Qq:    user.Qq,

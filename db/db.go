@@ -3,6 +3,7 @@ package db
 import (
 	"easy-search/config"
 	"fmt"
+	"gorm.io/gorm/schema"
 	"log"
 	"os"
 	"time"
@@ -46,6 +47,9 @@ func Init() {
 	var err error
 	Conn, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: customLogger,
+		NamingStrategy: schema.NamingStrategy{
+			SingularTable: true,
+		},
 	})
 
 	if err != nil {

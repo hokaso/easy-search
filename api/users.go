@@ -13,7 +13,7 @@ func QueryUserPhone(c *gin.Context) {
 
 	// request接收
 	var getUserPhoneRequest serializers.UserPhoneRequest
-	var user models.User
+	var user models.SenQq
 	err := c.Bind(&getUserPhoneRequest)
 	if err != nil {
 		e.CommonError(e.ErrInputInvalid, c)
@@ -41,7 +41,7 @@ func QueryUserQq(c *gin.Context) {
 
 	// request接收
 	var getUserQqRequest serializers.UserQqRequest
-	var user models.User
+	var user models.SenQq
 	err := c.Bind(&getUserQqRequest)
 	if err != nil {
 		e.CommonError(e.ErrInputInvalid, c)
