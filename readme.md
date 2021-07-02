@@ -1,5 +1,7 @@
 # Go Service Development Practices (Go服务开发实践)
 
+> 原作@michael.he
+
 ## 前言
 
 没有写Best Practice，仅仅只是个人实践，有待在项目中持续改进。规范网上一抓一把，没有见过两个项目用一个规范的，sample application也都有很多不同的规范，所以还是根据团队在一起做项目的时候落实下来的实践，慢慢形成这个共识规范。
