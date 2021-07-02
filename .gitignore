@@ -1,0 +1,5 @@
+/config/*.yml
+**/.vscode
+**/build
+telepresence.log
+**/.idea
