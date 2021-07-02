@@ -1,4 +1,4 @@
-module esay-search
+module easy-search
 
 go 1.16
 
